@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="580.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.MainOverviewController">
+   <children>
+      <Label layoutX="24.0" layoutY="22.0" text="Considerar números de 1 a" />
+      <TextField fx:id="tfSequencia" alignment="CENTER" layoutX="176.0" layoutY="18.0" prefHeight="25.0" prefWidth="31.0" />
+      <Button layoutX="501.0" layoutY="90.0" mnemonicParsing="false" onAction="#handleEncontrarXButton" text="Encontrar X" />
+      <ScrollPane layoutX="317.0" layoutY="247.0" prefHeight="315.0" prefWidth="291.0">
+         <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="313.0" prefWidth="290.0">
+               <children>
+                  <TextArea fx:id="textarea2" prefHeight="313.0" prefWidth="290.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutX="21.0" layoutY="177.0" prefHeight="315.0" prefWidth="264.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="313.0" prefWidth="263.0">
+               <children>
+                  <TextArea fx:id="textarea" layoutY="-7.0" prefHeight="313.0" prefWidth="263.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-7.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Label layoutX="24.0" layoutY="63.0" text="Quantidade números na cartela:" />
+      <Label layoutX="22.0" layoutY="102.0" text="Quantidade de números do sorteio:" />
+      <TextField fx:id="tfCartela" alignment="CENTER" layoutX="200.0" layoutY="59.0" prefHeight="25.0" prefWidth="31.0" />
+      <TextField fx:id="tfSorteio" alignment="CENTER" layoutX="216.0" layoutY="98.0" prefHeight="25.0" prefWidth="31.0" />
+      <Label layoutX="313.0" layoutY="22.0" text="Encontrar X por linearidade:" />
+      <TextField fx:id="tfLinearidadeA1" alignment="CENTER" layoutX="313.0" layoutY="59.0" prefHeight="25.0" prefWidth="31.0" />
+      <TextField fx:id="tfLinearidadeA2" alignment="CENTER" layoutX="356.0" layoutY="59.0" prefHeight="25.0" prefWidth="31.0" />
+      <TextField fx:id="tfLinearidadeA3" alignment="CENTER" layoutX="399.0" layoutY="59.0" prefHeight="25.0" prefWidth="31.0" />
+      <TextField fx:id="tfLinearidadeAx" alignment="CENTER" layoutX="442.0" layoutY="59.0" prefHeight="25.0" prefWidth="31.0" text="X" />
+      <TextField fx:id="tfLinearidadeB3" alignment="CENTER" layoutX="399.0" layoutY="90.0" prefHeight="25.0" prefWidth="31.0" />
+      <TextField fx:id="tfLinearidadeB2" alignment="CENTER" layoutX="356.0" layoutY="90.0" prefHeight="25.0" prefWidth="31.0" />
+      <TextField fx:id="tfLinearidadeB1" alignment="CENTER" layoutX="313.0" layoutY="90.0" prefHeight="25.0" prefWidth="31.0" />
+      <TextField fx:id="tfLinearidadeB4" alignment="CENTER" layoutX="442.0" layoutY="90.0" prefHeight="25.0" prefWidth="31.0" />
+      <TextField fx:id="tfLinearidadeC4" alignment="CENTER" layoutX="442.0" layoutY="123.0" prefHeight="25.0" prefWidth="31.0" />
+      <TextField fx:id="tfLinearidadeC1" alignment="CENTER" layoutX="313.0" layoutY="123.0" prefHeight="25.0" prefWidth="31.0" />
+      <TextField fx:id="tfLinearidadeC2" alignment="CENTER" layoutX="356.0" layoutY="123.0" prefHeight="25.0" prefWidth="31.0" />
+      <TextField fx:id="tfLinearidadeC3" alignment="CENTER" layoutX="399.0" layoutY="123.0" prefHeight="25.0" prefWidth="31.0" />
+      <Label layoutX="21.0" layoutY="140.0" text="Cartelas a serem verificadas:" />
+      <Button layoutX="96.0" layoutY="515.0" mnemonicParsing="false" onAction="#handleVerificarButton" text="Verificar  Cartelas" />
+      <Label layoutX="325.0" layoutY="209.0" text="Sorteios não contemplados:" />
+      <Label layoutX="21.0" layoutY="158.0" text="(uma cartela por linha, números separados por espaço)" />
+   </children>
+</AnchorPane>
